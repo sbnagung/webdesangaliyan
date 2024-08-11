@@ -1,0 +1,257 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #008080;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo-image {
+    height: 100px; /* Adjust the height as needed */
+    width: auto;
+    vertical-align: middle;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+main {
+    flex: 1; /* Allows the main content area to expand and fill available space */
+    padding: 20px;
+    background: #f4f4f4;
+    min-height: 60vh; /* Set a minimum height for the content area */
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background-image: <img src="Image\logongaliyan.png"> /* Replace with your image file */
+    background-size: cover;
+    background-position: center;
+    height: 80vh; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: -1; /* Place the overlay behind the content */
+}
+
+.hero-content {
+    z-index: 2; /* Ensure content is above the overlay */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: #0056b3;
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    background: #f4f4f4;
+}
+
+.about .content {
+    display: flex;
+    align-items: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.about-text {
+    margin-left: 20px;
+}
+
+/* Produk Unggulan Section */
+.Produk Unggulan {
+    padding: 50px 20px;
+    background: #fff;
+}
+
+.produk_unggulan-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.produk_unggulan-card {
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.produk_unggulan-card h3, .produk_unggulan-card p {
+    position: relative;
+    z-index: 2;
+}
+
+.produk_unggulan-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Optional overlay for better text readability */
+    z-index: 1;
+}
+
+.produk_unggulan-card a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Potensi Desa Section */
+.potensi-desa {
+    padding: 50px 20px;
+    background: #f4f4f4;
+}
+
+.potensi-desa .content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.potensi-desa ul {
+    list-style: disc;
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    background: #fff;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form label {
+    margin-top: 10px;
+}
+
+.contact form input,
+.contact form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact form button {
+    margin-top: 20px;
+    background: #50C878;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    background: #008080;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Ensures the footer stays at the bottom */
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
